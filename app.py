@@ -175,7 +175,7 @@ def generate_lottery():
         '''
         # db에 값 넣기 id의 값은 자동으로 1씩 증가함
         cursor.execute(sql_insert, (random_num, id))
-        conn.commit()
+        conn.commit() # add
 
         cursor.close()
         conn.close()  # db close
